@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', 'Avenir Next', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    min-height: 100svh;
+    padding: 24px;
+    background:
+        radial-gradient(ellipse at 18% 18%, rgba(91, 205, 190, 0.34), transparent 38%),
+        radial-gradient(ellipse at 82% 76%, rgba(202, 177, 111, 0.2), transparent 36%),
+        linear-gradient(135deg, #102d32 0%, #183d45 52%, #284b42 100%);
+    color: #ffffff;
+}
+
+.clock-container {
+    width: min(100%, 560px);
+    padding: clamp(32px, 7vw, 56px) clamp(24px, 6vw, 48px);
+    background: rgba(255, 255, 255, 0.11);
+    border: 1px solid rgba(255, 255, 255, 0.24);
+    border-radius: 24px;
+    text-align: center;
+    box-shadow:
+        0 24px 64px rgba(4, 20, 23, 0.3),
+        inset 0 1px 0 rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(22px) saturate(140%);
+    -webkit-backdrop-filter: blur(22px) saturate(140%);
+}
+
+.time {
+    font-size: clamp(2.8rem, 10vw, 5rem);
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-variant-numeric: tabular-nums;
+}
+
+.date {
+    font-size: clamp(1rem, 3.5vw, 1.25rem);
+    font-weight: 300;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.78);
+}
